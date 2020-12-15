@@ -12,7 +12,7 @@ const showMenu = (toggleId, navId) => {
 showMenu("nav-toggle", "nav-menu");
 
 // Remove Menu on Mobile
-const navLink = document.querySelectorAll(".nav_-link");
+const navLink = document.querySelectorAll(".nav-link");
 
 function linkAction() {
   const navMenu = document.getElementById("nav-menu");
@@ -39,7 +39,7 @@ function scrollActive() {
         .classList.add("active");
     } else {
       document
-        .querySelector(".nav__menu a[href*=" + sectionId + "]")
+        .querySelector(".nav-menu a[href*=" + sectionId + "]")
         .classList.remove("active");
     }
   });
