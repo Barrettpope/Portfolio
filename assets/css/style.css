@@ -390,3 +390,35 @@ img {
   font-size: var(--normal-font-size);
   cursor: pointer;
 }
+
+/* Footer */
+.footer {
+  background-color: var(--dark-color);
+}
+.footer-container {
+  row-gap: 2rem;
+}
+.footer-title {
+  font-size: var(--normal-font-size);
+  color: var(--white-color);
+  margin-bottom: var(--mb-2);
+}
+
+.footer-logo {
+  font-size: 0.9rem;
+}
+.footer-link {
+  padding: 0.25rem 0;
+  transition: color 0.5s;
+}
+.footer-link:hover {
+  color: var(--first-color);
+}
+.footer-social {
+  font-size: 1.4rem;
+  margin-right: var(--mb-1);
+  transition: color 0.5s;
+}
+.footer-social:hover {
+  color: var(--first-color);
+}
