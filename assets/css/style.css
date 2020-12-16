@@ -346,9 +346,12 @@ img {
 }
 .portfolio-link-name {
   color: var(--dark-color);
+  font-size: 18px;
+  text-align: center;
 }
 
 /* Contact Section */
+
 .contact-container {
   row-gap: 2rem;
 }
@@ -368,16 +371,12 @@ img {
 .contact-input {
   width: 100%;
   padding: 0.8rem;
-  outline: none;
-  border: 1.5px solid var(--dark-color);
+  border: 2.25px solid var(--dark-color);
   font-size: var(--normal-font-size);
   margin-bottom: var(--mb-4);
   border-radius: 0.5rem;
 }
 
-#message::placeholder {
-  font-size: var(--normal-font-size);
-}
 .contact-button {
   display: block;
   background-color: var(--first-color);
@@ -389,6 +388,45 @@ img {
   outline: none;
   font-size: var(--normal-font-size);
   cursor: pointer;
+  transition: color 0.5s;
+}
+
+.contact-button:hover {
+  background-color: #3dcfb2;
+}
+
+#status {
+  padding: 0.7rem;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 1.2rem;
+}
+
+#status.success {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  animation: status 4s ease forwards;
+}
+
+#status.error {
+  background-color: red;
+  color: var(--white-color);
+  animation: status 4s ease forwards;
+}
+
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 /* Footer */
