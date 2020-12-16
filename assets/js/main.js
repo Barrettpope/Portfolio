@@ -79,6 +79,8 @@ sr.reveal(".contact-text", { interval: 200 });
 sr.reveal(".contact-input", { delay: 400 });
 sr.reveal(".contact-button", { delay: 600 });
 
+// Formspree API
+
 window.addEventListener("DOMContentLoaded", function () {
   // get the form elements defined in your form HTML above
 
