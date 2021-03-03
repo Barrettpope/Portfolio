@@ -198,7 +198,7 @@ img {
 }
 .home-title {
   align-self: flex-end;
-  font-size: 7.5rem;
+  font-size: 5rem;
   color: var(--white-color);
   line-height: 1;
   text-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
@@ -520,6 +520,10 @@ img {
     height: 100vh;
     grid-template-rows: 1.7fr 1fr;
     row-gap: 0;
+  }
+
+  .home-title {
+    font-size: 7.5rem;
   }
   .home-img {
     width: 524px;
